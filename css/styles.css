@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-family: 'Lexend Deca' , sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.card-sedan {
+  background-color: var(--bright-orange);
+}
+
+.card-suv {
+  background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card {
+  padding: 50px;
+}
+
+.card h2 {
+  font-family: 'Big Shoulders Display', sans-serif, cursive;
+  color: var(--very-light-gray);
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 33px;
+}
+
+.card p {
+  color: var(--transparent-white);
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: var(--very-light-gray);
+  padding: 13px 27px;
+  border-radius: 26px;
+  margin-top: 60px;
+  display: inline-block;
+  border: 2px solid var(--very-light-gray);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.card-sedan a {
+  color: var(--bright-orange);
+}
+
+.card-suv a {
+  color: var(--dark-cyan);
+}
+
+.card-luxury a {
+  color: var(--very-dark-cyan);
+}
+
+.card a:hover {
+  color: var(--very-light-gray);
+  background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cards {
+    margin: 2rem .5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
